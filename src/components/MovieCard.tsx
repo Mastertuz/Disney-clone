@@ -13,7 +13,7 @@ function MovieCard({ movie }: { movie: Movie }) {
 
       <Image
         alt={movie.title}
-        src={getImagePath(movie.poster_path || movie.backdrop_path)}
+        src={getImagePath( movie.backdrop_path||movie.poster_path)}
         width={1920}
         height={1080}
         key={movie.id}
